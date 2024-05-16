@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-size: 13px;
+  overflow-x: hidden;
+}
+
+.container {
+  @apply max-w-[1200px] w-full mx-auto;
+}
+
+.nav {
+  @apply max-w-[1250px] w-full mx-auto;
+}
+
+.center {
+  @apply flex items-center justify-center;
+}
+
+.padding {
+  @apply px-4 xl:px-0;
+}
+
+.textGradient {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.25px white;
+  background-clip: text;
+  font-size: 150px;
+  -webkit-background-clip: text;
+}
+
+.filter {
+  filter: blur(200px);
+}
+
+.textGradient2 {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.25px black;
+  background-clip: text;
+  font-size: 150px;
+  -webkit-background-clip: text;
+}
+
+.glass {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3), 0 -2px 6px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.bgGradient {
+  background-image: linear-gradient(to right, black, blue);
+  animation: 5s change1 infinite linear;
+  transition: 1s all;
+}
+
+@keyframes change1 {
+  from {
+    background-image: linear-gradient(to right, black, blue);
+  }
+  to {
+    background-image: linear-gradient(to left, red, purple);
+  }
+}
+
+.bgGradient2 {
+  background-image: linear-gradient(to right, red, purple);
+  animation: 5s change2 infinite linear;
+  transition: 1s all;
+}
+
+@keyframes change2 {
+  from {
+  background-image: linear-gradient(to right, red, purple);
+  }
+  to {
+    background-image: linear-gradient(to left, black, blue);
+  }
+}
+
+
+
+
+.bgGradient3 {
+  background-image: linear-gradient(to right, rgb(255, 0, 255), rgb(0, 255, 234), rgb(255, 0, 0));
+  animation: 5s change3 infinite linear;
+  transition: 1s all;
+}
+
+@keyframes change3 {
+  from {
+  background-image: linear-gradient(to right, purple, blue, red);
+  }
+  to {
+  background-image: linear-gradient(to left, purple, blue, red);
+  }
+}
+
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.animate1 {
+  animation: 20s slide infinite linear;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate2 {
+  animation: 20s slide2 infinite linear;
+}
+
+@keyframes slide2 {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
