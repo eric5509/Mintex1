@@ -1,13 +1,26 @@
-import Hero from "@/components/Hero/Hero";
-import Slide from "@/components/TempA/Slide";
-import TempB from "@/components/TempB/TempB";
+import Button from "@/components/Button";
+import Input from "@/components/Input";
+import KingOfCoin from "@/components/KingOfCoin";
+import LimitMarket from "@/components/LimitMarket";
+import MarketCap from "@/components/MarketCap";
+import Post from "@/components/Post";
+import TokenCreated from "@/components/TokenCreated";
+import TonCharge from "@/components/TonCharge";
+import Topnav from "@/components/Topnav";
+import TrendingTitle from "@/components/TrendingTitle";
 
-export default function HomePage() {
+export default function page() {
   return (
-    <main className="pb-10">
-      <Hero />
-      <TempB />
-      <Slide />
-    </main>
-  );
+    <div>
+      <KingOfCoin />
+      <TonCharge />
+      <TokenCreated />
+      <Input />
+      <LimitMarket />
+      <TrendingTitle />
+      <Topnav />
+      <Post />
+      <MarketCap />
+    </div>
+  )
 }

@@ -1,9 +1,9 @@
 import localFont from "next/font/local";
+const myFont = localFont({ src: "../assets/fonts/Poppins-Regular.ttf" });
+// const myFont = localFont({ src: "../assets/fonts/Inter-Regular.ttf" });
+
 import type { Metadata } from "next";
 import "./globals.css";
-import Nav from "@/components/Nav/Nav";
-const myFont = localFont({ src: "../assets/fonts/Poppins-Regular.ttf" });
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,11 +15,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
+
   return (
     <html lang="en">
       <body className={myFont.className}>
-        <Nav />
-        <div className="">{children}</div>
+          <div className="p-10">{children}</div>
       </body>
     </html>
   );

@@ -19,10 +19,24 @@ const config: Config = {
         '19': '19px',
       },
       colors:{
-
+        "primary": "#4DB24D",
+        "secondary": "#1E4F70",
+        "background": "",
+        "stroke": "#EDEFF2",
+        "subText": "#5090A0",
+        "sellOff": "",
+        "fadeOff": "",
+        "fadeText": "#8996A9"
       },
       backgroundColor:{
-
+        "primary": "#4DB24D",
+        "secondary": "#1E4F70",
+        "background": "",
+        "stroke": "#EDEFF2",
+        "subText": "#5090A0",
+        "sellOff": "",
+        "fadeOff": "",
+        "fadeText": "#8996A9"
       },
       
     },
